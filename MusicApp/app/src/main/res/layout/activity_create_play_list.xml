@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_download_songs"
+    style="@style/CreatePlaylistMasterLayout"
+    tools:context="com.example.agupt23.musicapp.CreatePlayListActivity">
+
+    <TextView
+        android:id="@+id/description_create_playlist"
+        style="@style/CreatePlaylistTextViews"
+        android:text="@string/create_playlist_description" />
+
+    <TextView
+        android:id="@+id/problem_create_playlist"
+        style="@style/CreatePlaylistTextViews"
+        android:text="@string/create_playlist_problem" />
+
+    <TextView
+        android:id="@+id/solution_create_playlist"
+        style="@style/CreatePlaylistTextViews"
+        android:text="@string/create_playlist_solution" />
+
+
+    <LinearLayout style="@style/CreatePlaylistButtonLinearLayout">
+
+        <Button
+            android:id="@+id/play_songs_gotoactivity_button"
+            style="@style/CreatePlaylistButtons"
+            android:text="@string/go_to_play_songs_activity" />
+
+        <Button
+            android:id="@+id/download_songs_gotoactivity_button"
+            style="@style/CreatePlaylistButtons"
+            android:text="@string/go_to_download_songs_activity" />
+
+        <Button
+            android:id="@+id/home_gotoactivity_button"
+            style="@style/CreatePlaylistButtons"
+            android:text="@string/go_to_home_screen" />
+
+    </LinearLayout>
+
+</LinearLayout>

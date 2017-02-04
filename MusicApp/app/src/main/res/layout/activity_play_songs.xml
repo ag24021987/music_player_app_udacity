@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_songs"
+    style="@style/PlaySongsMasterLayout"
+    tools:context="com.example.agupt23.musicapp.PlaySongsActivity">
+
+    <TextView
+        android:id="@+id/play_songs_activity_description"
+        style="@style/PlaySongsDescriptionTextView"
+        android:text="@string/play_songs_description" />
+
+
+    <TextView
+        android:id="@+id/play_sample_audio_file"
+        style="@style/PlaySongsHeadingTextView"
+        android:layout_below="@id/play_songs_activity_description"
+        android:text="@string/play_sample_audio_file" />
+
+    <LinearLayout
+        android:id="@+id/play_sample_audio_buttons"
+        style="@style/PlaySongsButtonsLinearLayout"
+        android:layout_below="@id/play_sample_audio_file">
+
+        <Button
+            android:id="@+id/start_sample_audio_button"
+            style="@style/PlaySampleButtons"
+            android:text="@string/start_sample" />
+
+        <Button
+            android:id="@+id/pause_sample_audio_button"
+            style="@style/PlaySampleButtons"
+            android:text="@string/pause_sample" />
+
+        <Button
+            android:id="@+id/stop_sample_audio_button"
+            style="@style/PlaySampleButtons"
+            android:text="@string/stop_sample" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_file_from_device"
+        style="@style/PlaySongsHeadingTextView"
+        android:layout_below="@id/play_sample_audio_buttons"
+        android:text="@string/select_file_from_device" />
+
+    <LinearLayout
+        android:id="@+id/file_chooser_layout"
+        style="@style/PlaySongsButtonsLinearLayout"
+        android:layout_below="@id/select_file_from_device">
+
+        <Button
+            android:id="@+id/choose_audio_file"
+            style="@style/PlaySampleButtons"
+            android:text="@string/choose_audio_file" />
+
+        <Button
+            android:id="@+id/stop_audio_file"
+            style="@style/PlaySampleButtons"
+            android:text="@string/stop_playing" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/PlaySongsButtonsLinearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/file_chooser_layout"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/download_songs_gotoactivity_button"
+            style="@style/PlaySongsGoToButtons"
+            android:text="@string/go_to_download_songs_activity" />
+
+        <Button
+            android:id="@+id/create_playlist_gotoactivity_button"
+            style="@style/PlaySongsGoToButtons"
+            android:text="@string/go_to_create_playlist_activity" />
+
+        <Button
+            android:id="@+id/home_gotoactivity_button"
+            style="@style/PlaySongsGoToButtons"
+            android:text="@string/go_to_home_screen" />
+
+    </LinearLayout>
+</RelativeLayout>

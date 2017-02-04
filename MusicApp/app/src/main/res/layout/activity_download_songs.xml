@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_download_songs"
+    style="@style/DownloadSongsMasterLayout"
+    tools:context="com.example.agupt23.musicapp.DownloadSongsActivity">
+
+    <TextView
+        android:id="@+id/description_download_songs"
+        style="@style/DownloadSongsTextViews"
+        android:text="@string/download_songs_description" />
+
+    <TextView
+        android:id="@+id/problem_download_songs"
+        style="@style/DownloadSongsTextViews"
+        android:text="@string/download_songs_problem" />
+
+    <TextView
+        android:id="@+id/solution_download_songs"
+        style="@style/DownloadSongsTextViews"
+        android:text="@string/download_songs_solution" />
+
+
+    <LinearLayout style="@style/DownloadSongsButtonLinearLayout">
+
+        <Button
+            android:id="@+id/play_songs_gotoactivity_button"
+            style="@style/DownloadSongsButtons"
+            android:text="@string/go_to_play_songs_activity" />
+
+        <Button
+            android:id="@+id/create_playlist_gotoactivity_button"
+            style="@style/DownloadSongsButtons"
+            android:text="@string/go_to_create_playlist_activity" />
+
+        <Button
+            android:id="@+id/home_gotoactivity_button"
+            style="@style/DownloadSongsButtons"
+            android:text="@string/go_to_main_activity" />
+
+    </LinearLayout>
+</LinearLayout>

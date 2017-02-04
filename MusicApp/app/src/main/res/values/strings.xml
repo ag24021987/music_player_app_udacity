@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="main_activity_description">This app lets the user play music files present on the device or download audio files from our internet library</string>
+    <string name="play_songs_button">Play Songs</string>
+    <string name="create_playlist_button">Create Playlist</string>
+    <string name="download_songs_button">Download Songs</string>
+    <string name="download_songs_description">This Activity will list the songs available in our online store. The user will be able to select the song he wants and click on download to download the audio file.</string>
+    <string name="download_songs_problem">Problem: We need to display all the songs (numbers can be in millions) to the user without hardcoding them and they should be accessible over the internet</string>
+    <string name="download_songs_solution">Solution: We need to store the song details in a database such as Firebase through which we can run queries and get the song list with or without filters such as artists,albums etc.</string>
+    <string name="go_to_play_songs_activity">Go to Play Songs</string>
+    <string name="go_to_create_playlist_activity">Go to Create Playlist</string>
+    <string name="go_to_main_activity">Go to Home Screen</string>
+    <string name="create_playlist_description">This Activity will allow the users to create a playlist of the songs present on their device. The user can download songs from our online library and create different playlists for different themed songs</string>
+    <string name="create_playlist_problem">Problem: From the file chooser, we should be able to allow the user to browse either intenal storage or SD card and select multiple songs at once.</string>
+    <string name="create_playlist_solution">Solution: We can use the code used in Play Songs Activity (Intent to select a file) and modify it to select multiple songs and save the songs path in a file in android local database or an online database such as firebase.</string>
+    <string name="go_to_home_screen">Go to Home Screen</string>
+    <string name="play_songs_description">This Activity allows the user to play a sample audio file. It also allows the user to select an audio file in his local internal storage and play it. The challenges faced during implementation of this were to learn how to start Media player in android and it\'s various states. The solution can be updated with a proper UI which emulates a media player</string>
+    <string name="play_sample_audio_file">Play Sample Audio File</string>
+    <string name="start_sample">Start</string>
+    <string name="pause_sample">Pause</string>
+    <string name="stop_sample">Stop</string>
+    <string name="select_file_from_device">Select File from device</string>
+    <string name="choose_audio_file">Choose Audio file</string>
+    <string name="stop_playing">Stop Playing</string>
+    <string name="go_to_download_songs_activity">Go to Download Songs</string>
+</resources>
